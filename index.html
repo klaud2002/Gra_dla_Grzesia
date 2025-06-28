@@ -180,7 +180,7 @@
         player = { x: width / 2, y: height - 300, w: 200, h: 200, speed: 12 };
         score = 0;
         lives = 3;
-        fallSpeed = 2;
+        fallSpeed = 5;
         paused = false;
         boomTextTimer = 0;
 
@@ -264,7 +264,7 @@
         }
 
         // Check win
-        if (score >= 1000) {
+        if (score >= 200) {
           bgMusic.pause();
           document.getElementById("winScreen").style.display = "flex";
           if (score > bestScore) {
